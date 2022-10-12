@@ -1,0 +1,200 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    bool Output;
+    
+    //A 
+    int p;
+    cin>>p;
+    
+    if(p%4==0 || p%7==0)
+    {
+        Output=1;
+    }
+    else Output =0;
+     
+    return 0;
+}
+
+*******************************************************************
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    bool Output;
+    
+    //Б
+    int a;
+    int b;
+    int c;
+    
+    cin>> a>>b>>c;
+    
+    if(b*b-4*a*c<0)
+    {
+        Output = 1;
+    }
+    else Output =0;
+     
+    return 0;
+}
+
+*************************************************************************
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    bool Output;
+    
+     //В
+    double a;
+    double b;
+    
+    cin>>a>>b;
+    if(sqrt(a*a+(b-1)*(b-1))<=5)
+    {
+        Output =1;
+    }
+    else Output =0;
+     
+    return 0;
+}
+
+**************************************************************************
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    bool Output;
+    
+   //Г1
+    double a, b, c, d, f;
+    
+    if(sqrt((a-c)*(a-c)+(b-d)*(b-d))<=f)
+    {
+        Output =1;
+    }
+    else Output =0;
+     
+    return 0;
+}
+
+******************************************************************************
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    bool Output;
+    
+   //Г2
+    double a;
+    double b;
+    
+    cin>>a>>b;
+    if(sqrt(a*a+b*b)<=5 && a<=0 && b<=0)
+    {
+        Output =1;
+    }
+    else Output =0;
+     
+    return 0;
+}
+
+*****************************************************************************
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    bool Output;
+    
+  //Д
+    double a,b;
+    
+    cin>>a>>b;
+    
+    if(a*a/100 +b*b/25==1)
+    {
+        Output =1;
+    }
+    else Output=0;
+     
+    return 0;
+}
+
+*******************************************************************************
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    bool Output;
+    
+  //E 
+    double x,y;
+    
+    cin>>x>>y;
+    
+    if(y==0 && x>=0 && x<=1)
+    {
+        Output =1;
+    }
+    else Output =0;
+     
+    return 0;
+}
+
+********************************************************************************
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    bool Output;
+    
+   //Ж
+    int a,b,c,x;
+    
+    cin>> a>> b>>c>>x;
+    int max;
+    
+    if(a>=b && a>=c)
+    {
+        max=a;
+    }
+    else if(b>=c)
+    {
+        max=b;
+    }
+    else max=c;
+    
+    if(x==max)
+    {
+        Output=1;
+    }
+    else Output=0;
+    
+     
+    return 0;
+}

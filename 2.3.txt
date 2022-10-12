@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double X;
+    double Y;
+    
+    cout<<"Enter X:"; cin>> X;
+    cout<<"Enter Y:"; cin>> Y;
+    
+    if(X==0)
+    {
+        if(Y==0)
+        cout<< "The point is at the centre.";
+        else
+        cout<< "The point is on the Y axis.";
+    }
+    else if(Y==0 && X !=0)  cout<< "The point is on the X axis.";
+    else if(X>0 && Y>0) cout<< "The point is in the 1st quadrant.";
+    else if(X<0 && Y>0) cout<< "The point is in the 2nd quadrant.";
+    else if(X<0 && Y<0) cout<< "The point is in the 3rd quadrant.";
+    else if(X>0 && Y<0) cout<< "The point is in the 4th quadrant.";
+    
+    return 0;
+}

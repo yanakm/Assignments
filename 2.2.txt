@@ -1,0 +1,44 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    cout << "Find the area using a known side and the height => Enter 1" << endl;
+    cout << "Find the area using 3 known sides => Enter 2"<<endl;
+    
+    int input=0;
+    cin >> input;
+    
+    if(input==1)
+    {
+        double A, H;
+        cout<<"Side:";
+        cin>> A;
+        cout<< "Height:";
+        cin>> H;
+        cout<< "The area equals "<< A*H*0.5;
+    }
+    else if(input==2)
+    {
+        double A, B, C;
+        cout<<"Enter sides"<<endl;
+        cin>> A >> B >> C;
+        if(A+B>C && A+C>B && B+C>A)
+        {
+            double Half = (A+B+C)*0.5;
+            cout<< "The area equals "<< sqrt(Half*(Half-A)*(Half-B)*(Half-C));
+        }
+        else
+        {
+            cout<<"This is not a valid triangle!";
+        }
+        
+    }
+    else
+    {
+        cout << "Invalid command!";
+    }
+
+    return 0;
+}
